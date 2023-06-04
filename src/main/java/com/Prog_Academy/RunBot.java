@@ -3,7 +3,12 @@ package com.Prog_Academy;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
-public class Main {
+/**
+ * @author Bohdan Hrytsai
+ * @version 1.0.0
+ */
+
+public class RunBot {
 
     public static void main(String[] args) throws Exception {
         var api = new TelegramBotsApi(DefaultBotSession.class);

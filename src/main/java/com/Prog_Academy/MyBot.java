@@ -34,12 +34,18 @@ public class MyBot extends TelegramLongPollingBot {
                 var price = CryptoPrice.spotPrice("LTC");
                 message.setText("Price LTC: " + price.getAmount().doubleValue() + " $");
 
+            } else if (text.equals("doge")) {
+                var price = CryptoPrice.spotPrice("DOGE");
+                message.setText(" Price DOGE: " + price.getAmount().doubleValue() + " $");
+
             } else if (text.equals("all")) {
                 var price1 = CryptoPrice.spotPrice("BTC");
                 var price2 = CryptoPrice.spotPrice("ETH");
                 var price3 = CryptoPrice.spotPrice("LTC");
+                var price4 = CryptoPrice.spotPrice("DOGE");
                 message.setText("Price : " + "BTC= " + price1.getAmount() + " $ " + ";" + "  " + "ETH= " +
-                        price2.getAmount() + " $ " + ";" + "  " + "LTC= " + price3.getAmount() + " $" + ".");
+                        price2.getAmount() + " $ " + ";" + "  " + "LTC= " + price3.getAmount() + " $" + ";" + "  " +
+                        "DOGE= " + price4.getAmount() + " $ " + " ." );
 
             } else {
                 message.setText("Unknown command !!!");
