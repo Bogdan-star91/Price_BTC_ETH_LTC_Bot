@@ -17,7 +17,7 @@ public class RunBot {
     }
 }
 
-//Price_BTC_ETH_LTC_bot
+//Price_BTC_ETH_LTC_DOGE_bot
 
 //6126033799:AAFmx9AWp9uTzJ8il0_JVtSFuSnGhwUGpGE
 
