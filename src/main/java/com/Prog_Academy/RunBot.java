@@ -6,6 +6,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 /**
  * @author Bohdan Hrytsai
  * @version 1.0.0
+ * @since version 1.0.1
  */
 
 public class RunBot {
